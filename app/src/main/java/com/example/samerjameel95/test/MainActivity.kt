@@ -8,6 +8,8 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             buChoice.setTextSize(40F)
             player1.add(CellID)
             activePlayer=2
+            AutoPlay()
         }else{
             buChoice.text="O"
             buChoice.setTextSize(40F)
@@ -101,4 +104,35 @@ class MainActivity : AppCompatActivity() {
            }
 
     }
+    fun AutoPlay(){
+        //scan empty cells
+        val empCells = ArrayList<Int>()
+        for (CellID in 1..9){
+            if (!(player1.contains(CellID) || player2.contains(CellID)))
+                empCells.add(CellID)
+        }
+        //select random index
+        val r=Random()
+        val randIndex = r.nextInt(empCells.size-0)+0
+        val CellID=empCells[randIndex]
+        //interpreter index to button
+        var buSelect:Button?
+        when(CellID){
+            1->buSelect=bu1
+            2->buSelect=bu2
+            3->buSelect=bu3
+            4->buSelect=bu4
+            5->buSelect=bu5
+            6->buSelect=bu6
+            7->buSelect=bu7
+            8->buSelect=bu8
+            9->buSelect=bu9
+            else->{
+                buSelect=bu1
+            }
+        }
+        PlayGame(CellID,buSelect)
+    }
+
 }
+
