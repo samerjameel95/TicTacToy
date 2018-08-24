@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:ignore="ExtraText">
+
+        <Button
+            android:id="@+id/bu1"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_margin="2pt"
+            android:background="@color/bottonBackground"
+            android:onClick="buSelect" />
+
+
+        <Button
+            android:id="@+id/bu2"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_margin="2pt"
+            android:background="@color/bottonBackground"
+            android:onClick="buSelect" />
+            android:layout_margin="2pt" />
+
+
+        <Button
+            android:id="@+id/bu3"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_margin="2pt"
+            android:background="@color/bottonBackground"
+            android:onClick="buSelect" />
+            android:layout_margin="2pt" />
+            
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bu4"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_margin="2pt"
+            android:background="@color/bottonBackground"
+            android:onClick="buSelect" />
+        android:layout_margin="2pt" />
+
+
+        <Button
+            android:id="@+id/bu5"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_margin="2pt"
+            android:background="@color/bottonBackground"
+            android:onClick="buSelect" />
+        android:layout_margin="2pt" />
+
+
+        <Button
+            android:id="@+id/bu6"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_margin="2pt"
+            android:background="@color/bottonBackground"
+            android:onClick="buSelect" />
+        
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bu7"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_margin="2pt"
+            android:background="@color/bottonBackground"
+            android:onClick="buSelect" />
+            android:layout_margin="2pt" />
+
+
+        <Button
+            android:id="@+id/bu8"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_margin="2pt"
+            android:background="@color/bottonBackground"
+            android:onClick="buSelect" />
+            android:layout_margin="2pt" />
+
+
+        <Button
+            android:id="@+id/bu9"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_margin="2pt"
+            android:background="@color/bottonBackground"
+            android:onClick="buSelect" />
+            android:layout_margin="2pt" />
+            
+    </TableRow>
+</TableLayout>
